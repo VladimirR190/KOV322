@@ -1,0 +1,70 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav ul li:hover {
+    color: white;
+}
+.zagolovok {
+     background: rgb(0, 0, 0); /* Задаем цвет фона */ 
+     
+    
+    
+     text-align: justify;
+
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)),url('../img/monitor-0-min.jpg');
+    background-size: cover; /* Растягивает изображение на всю область */
+    background-position: center; /* Выравнивает изображение по центру */
+    background-repeat: no-repeat; /* Запрещает повтор изображения */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.glavzag h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.predzag {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #0165a3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #009dff;
+}
+
+.podzag {
+    margin-top: 20px;
+}
