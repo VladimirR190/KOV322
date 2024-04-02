@@ -1,0 +1,206 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav ul li:hover {
+    color: white;
+}
+.zagolovok {
+     background: rgb(0, 0, 0); /* Задаем цвет фона */ 
+     
+    
+    
+     text-align: justify;
+
+
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)),url('../img/monitor-0-min.jpg');
+    background-size: cover; /* Растягивает изображение на всю область */
+    background-position: center; /* Выравнивает изображение по центру */
+    background-repeat: no-repeat; /* Запрещает повтор изображения */
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+.glavzag h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.predzag {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #0165a3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #009dff;
+}
+
+.podzag {
+    margin-top: 20px;
+}
+.akzia {
+    text-align: center; /* Центрирование содержимого блока .akzia */
+}
+
+.zag_ak, .naz_ak, .comp_ak {
+    margin: 0 auto;  /* Выравнивание по центру */
+    max-width: 600px; /* Максимальная ширина блока */
+}
+
+.btn {
+    position: relative;
+    background-color: #3f51b5; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-top: 20px; /* примерный отступ от предыдущего элемента */
+}
+
+.btn:hover {
+    background-color: #1e88e5; /* Цвет фона кнопки при наведении */
+}
+.poch_us {
+    text-align: center; /* Центрируем текст по центру */
+    background-color: rgba(0,0,0,0.5); /* Черный полупрозрачный фон */
+    padding: 20px; /* Внутренние отступы для содержимого */
+    margin: 20px; /* Внешние отступы вокруг блока */
+    color: #fff; /* Цвет текста белый */
+}
+
+.preim {
+    display: flex; /* Используем flexbox для выравнивания значков */
+    justify-content: space-around; /* Равномерное распределение значков по ширине */
+}
+
+.preim div{
+    width: 100px;
+    height: 100px;
+    background-color: #3f51b5; /* Цвет фона значков */
+    color: #fff; /* Цвет иконок */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+}
+    .katalog {
+    text-align: center;
+    margin: 20px;
+}
+
+.katal_comp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comp {
+    width: 22%; /* Ширина каждого компьютера - 22% для 4 в ряд */
+    margin: 10px;
+    background-color: #f9f9f9; /* Цвет фона блока компьютера */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comp img {
+    max-width: 100px; /* Максимальная ширина изображения компьютера */
+    margin: 0 auto 10px; /* Центрирование изображения */
+}
+
+.btn {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.katalog {
+    text-align: center;
+    margin: 20px;
+}
+
+.katal_comp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.comp {
+    width: 22%; /* Ширина каждого компьютера - 22% для 4 в ряд */
+    margin: 10px;
+    background-color: #f9f9f9; /* Цвет фона блока компьютера */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comp img {
+    max-width: 100px; /* Максимальная ширина изображения компьютера */
+    margin: 0 auto 10px; /* Центрирование изображения */
+}
+
+.btn {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+feedback {
+    text-align: center;
+    column-count: 2; /* Разделение на две колонки */
+}
+
+.client {
+    break-inside: avoid-column; /* Предотвращает разделение элемента на разные колонки */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Границы для лучшей отделимости отзывов */
+}
+
+.client img {
+    max-width: 100px; /* Максимальная ширина изображения клиента */
+    border-radius: 50%; /* Закругление краев для круглого изображения */
+    margin: 0 auto 10px; /* Центрирование изображения */
+}
+
+.client h4 {
+    color: #333; /* Цвет заголовка */
+}
+
+.client p {
+    color: #555; /* Цвет текста */
+}
