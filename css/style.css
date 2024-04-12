@@ -1,10 +1,24 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-style: sans-serif ;
+    background-color: whitesmoke;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     color: black;
-    padding: 10px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000; /* Устанавливает плавающий элемент поверх другого содержимого */
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для выделения навигационной панели */
+    font-size: 25px;
+
 }
 
 .nav ul {
@@ -15,16 +29,27 @@
 
 .nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
+    color: #696969;
 }
 
 .nav ul li:hover {
-    color: white;
+    color: black;
+    border-bottom: solid black 1px;
+}
+.nav ul li:not(:first-child)::before {
+    content: "•"; /* Текстовый символ точки */
+    margin-right: 5px; /* Расстояние между точкой и текстом */
+}
+.logo img{
+    width: 120px;
+    height: 50px;
 }
 .zagolovok {
      background: rgb(0, 0, 0); /* Задаем цвет фона */ 
-     
+     margin-top: 5%;
+     height: 500px;
     
     
      text-align: justify;
@@ -32,25 +57,34 @@
 
     color: white;
     text-align: center;
-    padding: 20px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(8, 8, 8, 0.5)),url('../img/monitor-0-min.jpg');
+    padding: 100px 400px 100px 400px ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(8, 8, 8, 0.5)),url('../img/monitor-0-min.jpg');
     background-size: cover; /* Растягивает изображение на всю область */
     background-position: center; /* Выравнивает изображение по центру */
     background-repeat: no-repeat; /* Запрещает повтор изображения */
     position: relative;
     overflow: hidden;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.4); /* Добавление тени */
+    
 }
+.zglv{
+align-items: center;
+}
+
 
 
 
 
 .glavzag h1 {
-    font-size: 24px;
+    font-size: 64px;
     margin-bottom: 10px;
 }
 
 .predzag {
     margin-bottom: 20px;
+}
+.predzag p{
+    font-size: 30px;
 }
 
 .btn {
@@ -60,21 +94,51 @@
     border-radius: 5px;
     display: inline-block;
     cursor: pointer;
+    width: 300px;
+    height: 50px;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавление тени */
+    transition: transform 0.2s, box-shadow 0.2s; /* Анимация при наведении */
+    
 }
 .btn:hover{
     background-color: #009dff;
+    transform: translateY(-2px); /* Эффект поднятия кнопки */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Увеличение тени при наведении */
 }
+.btn p{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    margin-top: 4px;
+}
+
+
 
 .podzag {
     margin-top: 20px;
 }
 .akzia {
     text-align: center; /* Центрирование содержимого блока .akzia */
+    background-color: whitesmoke;
 }
 
 .zag_ak, .naz_ak, .comp_ak {
     margin: 0 auto;  /* Выравнивание по центру */
     max-width: 600px; /* Максимальная ширина блока */
+}
+
+.zag_ak{
+    font-size: 30px;
+    
+}
+
+.naz_ak{
+    align-items: center;
+    margin: auto 200px;
+    max-width: 100%;
+    font-size: 20px;
 }
 
 .btn {
@@ -84,7 +148,7 @@
     padding: 10px 20px; 
     border-radius: 5px; 
     cursor: pointer;
-    margin-top: 20px; /* примерный отступ от предыдущего элемента */
+    
 }
 
 .btn:hover {
@@ -143,7 +207,7 @@
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+   
 }
 
 .katalog {
@@ -176,10 +240,9 @@
     padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-feedback {
+.feedback {
     text-align: center;
     column-count: 2; /* Разделение на две колонки */
 }
